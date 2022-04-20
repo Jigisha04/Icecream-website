@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Icecream</title>
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Font awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+   
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Updock&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a class="navbar-brand"href="" >Icecream</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav ms-auto">
+          <li class="navbar-item">
+             <a class="nav-link" href="#flavor">Flavours</a>
+          </li>
+          <li class="navbar-item">
+             <a class="nav-link" href="#contactform">Contact</a>
+          </li>
+          <li class="navbar-item">
+             <a class="nav-link" href="#cta">About</a>
+          </li>
+      </ul>
+      </div>
+     </nav>
+  
+
+
+
+     <!-- Title -->
+     <div class="row">
+      <div class="col-lg-6">
+        <h1 class="big-heading">Farm to Frozen</h1>
+        <h2> The destination for fine desserets</h2>
+        <p> Scroll to discover.......</p>
+       <h6>we make all our icecream in Brooklyn</h6>
+        <h6>From start to finish, every flavor is imagined,<h6>
+        <h6> churned and taste-tested in our kitchen</h6>
+        <h6> at our Red Hook Factory.</h6>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Order</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Order</button>
+
+      </div>
+      <div class="col-lg-6 image">
+        <img class="title-img" src="image/photo5.jpg" alt="iphone-mockup" width:5oopx>
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 column">
+        <i class="fas fa-check-circle fa-4x icon"></i>
+        <h3 class="feature-title">Taste of luxury!!</h3>
+        <p>Taste that never fades from your taste buds.</p>
+      </div>
+      <div class="col-lg-4 column">
+        <i class="fas fa-bullseye fa-4x icon"></i>
+        <h3 class="feature-title">Fullfill your moodswings</h3>
+        <p>We have all the flavours available: Make your own mood</p>
+      </div>
+      <div class="col-lg-4 column">
+        <i class="fas fa-heart fa-4x icon"></i>
+        <h3 class="feature-title">Guaranteed to flavours.</h3>
+        <p>Taste expensive with cheap prices</p>
+      </div>
+     </div>
+  </div>
+  </section>
+
+
+
+
+  <section id="flavor">
+  <div class="colored-section">
+  <div class="swiper">
+  
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"> <img class="press-logo" id="a" src="image/photo1.jpg" alt="image1"></div>
+      <div class="swiper-slide"> <img class="press-logo" id="b" src="image/photo2.jpg" alt="image2"></div>
+      <div class="swiper-slide"> <img class="press-logo" id="c" src="image/photo4.jpg" alt="image3"></div>
+      <div class="swiper-slide"> <img class="press-logo" id="d" src="image/photo7.jpg" alt="image4"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+      },
+ 
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+
+  </script>
+  </section>
+
+
+
+
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Feel light</h2>
+    <h4>Over the last decade, we have built a reputation for the most decadent and indulgent European desserts and Assian flavours.</h4>
+    <p> We have a passion for creating sweet masterpieces using only the finest quality ingredients in all of our products.  </p>
+
+
+    <div class="row ">
+    <div class="pricing-column col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Our Flavours🍦</h3>
+      </div>
+      <div class="card-body">
+        <h3 class="price-text"></h3>
+        <p>Butterscotch bliss</p>
+        <p>Chocolate chip</p>
+        <p>Butter pecan</p>
+        <p>Eskimo</p>
+        <p>Horchata and many more to taste..</p>
+       
+        <button type="button" class="btn w-100 btn-outline-dark btn-lg">Sign Up</button>
+      </div>
+    </div>
+  </div>
+  <div class="pricing-column col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Offers</h3>
+      </div>
+      <div class="card-body">
+        <h2 class="price-text">Buy 1 Get 1 Free</h2>
+        <p> Special Offer!!!</p>
+        <p> on Butterscotch bliss flavour</p>
+      
+        <button type="button" class="btn w-100 btn-dark btn-lg" >Sign Up</button>
+      </div>
+    </div>
+    </div>
+    <div class="pricing-column col-lg-4 ">
+    <div class="card">
+      <div class="card-header">
+        <h3>Ratings</h3>
+      </div>
+      <div class="card-body">
+        <h2 class="price-text">⭐⭐⭐⭐⭐</h2>
+        <p>Pirority Listing</p>
+        <p>Unlimited flavours</p>
+        
+        <button type="button" class="btn w-100 btn-dark btn-lg">Sign Up</button>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+ <section id="contactform">
+        <h2>My Contact details</h2>
+        <ul>
+            <center><h6>Email id - jigishasharma04@gmail.com</h6></center>
+            <li id="list2"><a href="https://github.com/Jigisha04?tab=repositories"><img src="image/github.png" style="width: 20px;"></a></li>
+            <form id="form" action="#" method="POST" enctype="text/plain" onsubmit="validate()"> 
+                <label for="">Name:</label>
+                <input type="text" id="name" name="Your name"><br>
+                <label for="">Email:</label>
+                <input type="email" id="email" name="Your email"><br>
+                <label for="">Adderess:</label>
+                <input type="text" id="address" name="Your adderess"><br>
+                <label for="">Your flavour:</label><br>
+                <textarea name="Your message" id="" cols="30" rows="1"></textarea><br>
+                <button type="submit" id="send"> Send</button>
+                
+
+
+            </form>
+        </ul>
+      </section>
+      
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+     <div class="container-fluid">
+    <h3 class="cta-heading">"Don't miss out"</h3>
+   
+    <p style="color: #fff;">we make all our icecream in Brooklyn</p>
+        <p style="color: #fff;">From start to finish, every flavor is imagined,</p>
+        <p style="color: #fff;"> churned and taste-tested in our kitchen</p>
+        <p style="color: #fff;"> at our Red Hook Factory</p>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>Download</button>
+  </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+    <i class="fab fa-twitter social-icon"></i>
+    <i class="fab fa-facebook-f social-icon"></i>
+    <i class="fab fa-instagram social-icon"></i>
+    <i class="fas fa-envelope social-icon"></i>
+    <p>© Copyright 2022 Icecream</p>
+  </div>
+  </footer>
+
+
+</body>
+
+</html>
